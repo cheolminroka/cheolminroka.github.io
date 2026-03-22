@@ -1,0 +1,2281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S&K 행정사사무소 | Korea Immigration & Visa Experts</title>
+<meta name="description" content="S&K 행정사사무소 - 외국인 비자 전문 | Korea Visa & Immigration Experts">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;700&family=Noto+Sans+JP:wght@300;400;700&family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1e3a5f;
+    --deep-blue: #f8fafc;
+    --blue: #eef2f7;
+    --accent: #0077b6;
+    --gold: #0096c7;
+    --light-gold: #48cae4;
+    --white: #ffffff;
+    --off-white: #f1f5f9;
+    --gray: #64748b;
+    --light-gray: #e2e8f0;
+    --text: #1e293b;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', 'Noto Sans KR', sans-serif;
+    background: #ffffff;
+    color: #1e293b;
+    overflow-x: hidden;
+  }
+
+  /* ── WHITE THEME OVERRIDES ── */
+  .services { background: #f8fafc !important; }
+  .process  { background: #ffffff !important; }
+  .about    { background: #f8fafc !important; }
+  .contact  { background: #f1f5f9 !important; }
+
+  .section-title { color: #1e293b !important; }
+  .section-desc  { color: #64748b !important; }
+
+  .service-card { background: #ffffff; border-color: #e2e8f0 !important; }
+  .service-card:hover { border-color: rgba(0,119,182,0.3) !important; box-shadow: 0 16px 48px rgba(0,119,182,0.08) !important; }
+  .service-card::before { background: linear-gradient(to bottom, #0077b6, #0096c7) !important; }
+  .service-title { color: #1e293b !important; }
+  .service-desc  { color: #64748b !important; }
+  .service-icon  { background: rgba(0,119,182,0.08) !important; }
+  .service-tag   { background: rgba(0,119,182,0.08) !important; color: #0077b6 !important; }
+
+  .step-num { background: #ffffff !important; border-color: #e2e8f0 !important; color: #0077b6 !important; box-shadow: 0 4px 16px rgba(0,0,0,0.06) !important; }
+  .step:hover .step-num { background: linear-gradient(135deg,#0077b6,#0096c7) !important; color:#fff !important; box-shadow: 0 8px 24px rgba(0,119,182,0.25) !important; }
+  .step-title { color: #1e293b !important; }
+  .step-desc  { color: #64748b !important; }
+  .process-steps::after { background: linear-gradient(to right,#0077b6,#0096c7,#0077b6) !important; opacity:0.25 !important; }
+
+  .contact-item  { background: #ffffff !important; border-color: #e2e8f0 !important; }
+  .contact-item:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.07) !important; }
+  .contact-item-title { color: #94a3b8 !important; }
+  .contact-item-val, .contact-item-val a { color: #1e293b !important; }
+  .contact-icon  { background: rgba(0,119,182,0.08) !important; }
+  .contact-form  { background: #ffffff !important; border-color: #e2e8f0 !important; }
+  .form-title    { color: #1e293b !important; }
+  .form-group label { color: #64748b !important; }
+  .form-group input, .form-group select, .form-group textarea {
+    background: #f8fafc !important; border-color: #e2e8f0 !important; color: #1e293b !important;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: #0077b6 !important; box-shadow: 0 0 0 3px rgba(0,119,182,0.1) !important; background: #ffffff !important;
+  }
+  .form-group select option { background: #ffffff; color: #1e293b; }
+
+  .about-img-box { background: linear-gradient(135deg,#1e3a5f,#0077b6) !important; }
+  .about-name-ko { color: #ffffff !important; }
+  .about-features li { color: #475569 !important; }
+  .about-features li::before { background: linear-gradient(135deg,#0077b6,#0096c7) !important; }
+  .about-title-badge { background: rgba(255,255,255,0.15) !important; border-color: rgba(255,255,255,0.35) !important; color: #ffffff !important; }
+  .about-float { background: linear-gradient(135deg,#0077b6,#0096c7) !important; box-shadow: 0 8px 24px rgba(0,119,182,0.3) !important; }
+
+  .hero { background: linear-gradient(135deg, #1e3a5f 0%, #0077b6 50%, #0096c7 100%) !important; }
+  .hero::after { background: linear-gradient(to top, #f8fafc, transparent) !important; }
+  .hero-bg-circle { border-color: rgba(255,255,255,0.1) !important; }
+  .stat-card { background: rgba(255,255,255,0.12) !important; border-color: rgba(255,255,255,0.2) !important; }
+  .stat-card:hover { border-color: rgba(255,255,255,0.5) !important; }
+  .stat-number { color: #ffffff !important; }
+  .hero-badge { background: rgba(255,255,255,0.15) !important; border-color: rgba(255,255,255,0.3) !important; }
+  .hero-badge span { color: #ffffff !important; }
+  .hero-badge::before { background: #ffffff !important; }
+
+  .btn-primary { background: linear-gradient(135deg,#ffffff,#e0f0ff) !important; color: #0077b6 !important; box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important; }
+  .btn-primary:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.2) !important; }
+  .btn-outline { border-color: rgba(255,255,255,0.5) !important; color: #ffffff !important; }
+  .btn-outline:hover { border-color: #ffffff !important; background: rgba(255,255,255,0.15) !important; }
+
+  .ticker-wrap { background: #0077b6 !important; }
+
+  .lang-card { background: rgba(255,255,255,0.08) !important; border-color: rgba(255,255,255,0.2) !important; }
+  .lang-card:hover { background: rgba(255,255,255,0.2) !important; border-color: rgba(255,255,255,0.5) !important; }
+
+  .float-btn { background: #ffffff !important; color: #1e293b !important; box-shadow: 0 4px 20px rgba(0,0,0,0.12) !important; }
+  .float-btn.primary { background: linear-gradient(135deg,#0077b6,#0096c7) !important; color: #fff !important; }
+
+  .header { background: rgba(255,255,255,0.97) !important; box-shadow: 0 1px 0 rgba(0,119,182,0.1), 0 2px 20px rgba(0,0,0,0.06) !important; }
+  .header-cta { background: #0077b6 !important; color: #ffffff !important; }
+  .header-cta:hover { background: #0096c7 !important; }
+  .logo-emblem { background: linear-gradient(135deg,#0077b6,#0096c7) !important; box-shadow: 0 4px 16px rgba(0,119,182,0.3) !important; }
+  .logo-text .name { color: #1e293b !important; }
+  .logo-text .sub { color: #0077b6 !important; }
+
+  .lang-bar { background: #1e3a5f !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; }
+  .lang-label { color: rgba(255,255,255,0.7) !important; }
+  .lang-btn { border-color: rgba(255,255,255,0.3) !important; color: rgba(255,255,255,0.7) !important; }
+  .lang-btn:hover, .lang-btn.active { background: #0096c7 !important; border-color: #0096c7 !important; color: #fff !important; }
+
+  .multilang { background: linear-gradient(135deg, #1e3a5f, #0077b6) !important; }
+  .multilang::before { background: radial-gradient(ellipse at 70% 50%, rgba(255,255,255,0.06) 0%, transparent 70%) !important; }
+  .multilang .section-title { color: #ffffff !important; }
+  .multilang .section-desc { color: rgba(255,255,255,0.75) !important; }
+
+  .form-submit { background: linear-gradient(135deg,#0077b6,#0096c7) !important; }
+
+  .footer-col ul li a { color: rgba(255,255,255,0.5) !important; }
+  .footer-col ul li a:hover { color: #48cae4 !important; }
+  .footer-copy, .footer-lic { color: rgba(255,255,255,0.3) !important; }
+  .section-tag { color: #0077b6 !important; }
+
+  /* Subtle light grid texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,119,182,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,119,182,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── LANGUAGE SWITCHER ── */
+  .lang-bar {
+    background: #1e3a5f;
+    padding: 8px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .lang-bar-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .lang-label {
+    color: rgba(255,255,255,0.6);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .lang-buttons {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .lang-btn {
+    padding: 4px 12px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: transparent;
+    color: rgba(255,255,255,0.65);
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.25s;
+    font-family: inherit;
+    white-space: nowrap;
+  }
+  .lang-btn:hover, .lang-btn.active {
+    background: #0096c7;
+    border-color: #0096c7;
+    color: #ffffff;
+  }
+
+  /* ── HEADER / NAV ── */
+  .header {
+    position: sticky;
+    top: 37px;
+    z-index: 995;
+    background: #ffffff;
+    padding: 16px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    box-shadow: 0 1px 0 #e2e8f0, 0 2px 12px rgba(0,0,0,0.05);
+  }
+  .logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .logo-emblem {
+    width: 52px;
+    height: 52px;
+    background: linear-gradient(135deg, #0077b6, #0096c7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: #ffffff;
+    flex-shrink: 0;
+    box-shadow: 0 4px 16px rgba(0,119,182,0.3);
+  }
+  .logo-text .name {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1e293b;
+    line-height: 1;
+    letter-spacing: 1px;
+  }
+  .logo-text .sub {
+    font-size: 11px;
+    color: #0077b6;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 3px;
+  }
+  .header-cta {
+    background: #0077b6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .header-cta:hover { background: #0096c7; }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, #1e3a5f 0%, #0077b6 55%, #0096c7 100%);
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 55%;
+    height: 100%;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800'%3E%3Cdefs%3E%3CradialGradient id='g' cx='60%25' cy='40%25'%3E%3Cstop offset='0%25' stop-color='%23ffffff' stop-opacity='0.07'/%3E%3Cstop offset='100%25' stop-color='%230077b6' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='800' height='800' fill='url(%23g)'/%3E%3C/svg%3E") no-repeat center;
+    background-size: cover;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(to top, #f8fafc, transparent);
+  }
+
+  /* Animated background circles */
+  .hero-bg-circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.1);
+    animation: pulse-ring 6s ease-in-out infinite;
+  }
+  .hero-bg-circle:nth-child(1) { width: 400px; height: 400px; right: 15%; top: 10%; animation-delay: 0s; }
+  .hero-bg-circle:nth-child(2) { width: 600px; height: 600px; right: 8%; top: -5%; animation-delay: 1s; }
+  .hero-bg-circle:nth-child(3) { width: 800px; height: 800px; right: 2%; top: -15%; animation-delay: 2s; }
+
+  @keyframes pulse-ring {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.02); }
+  }
+
+  .hero-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    width: 100%;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(200,144,46,0.15);
+    border: 1px solid rgba(200,144,46,0.4);
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+  }
+  .hero-badge span {
+    color: var(--gold);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .hero-badge::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--gold);
+    border-radius: 50%;
+    animation: blink 2s infinite;
+  }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 5vw, 62px);
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.12;
+    margin-bottom: 16px;
+  }
+  .hero h1 .highlight {
+    background: linear-gradient(135deg, #90e0ef, #caf0f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .hero-sub {
+    font-size: 16px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.7;
+    margin-bottom: 40px;
+    max-width: 500px;
+  }
+  .hero-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .btn-primary {
+    background: #ffffff;
+    color: #0077b6;
+    padding: 14px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.2); }
+  .btn-outline {
+    border: 1px solid rgba(255,255,255,0.5);
+    color: #ffffff;
+    padding: 14px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.2s;
+  }
+  .btn-outline:hover { border-color: #ffffff; background: rgba(255,255,255,0.15); }
+
+  /* Hero right stats */
+  .hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .stat-card {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+    padding: 28px 24px;
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  .stat-card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,0.5); }
+  .stat-card:nth-child(1) { grid-column: span 2; }
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stat-label { color: rgba(255,255,255,0.75); font-size: 13px; }
+  .stat-desc { color: rgba(255,255,255,0.55); font-size: 11px; margin-top: 4px; }
+
+  /* ── MULTILANG TICKER ── */
+  .ticker-wrap {
+    background: var(--accent);
+    padding: 12px 0;
+    overflow: hidden;
+  }
+  .ticker-track {
+    display: flex;
+    gap: 60px;
+    animation: ticker 20s linear infinite;
+    white-space: nowrap;
+  }
+  .ticker-item {
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+  }
+  .ticker-dot { color: rgba(255,255,255,0.5); }
+  @keyframes ticker { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+
+  /* ── SECTION COMMONS ── */
+  .section { padding: 100px 40px; }
+  .section-inner { max-width: 1280px; margin: 0 auto; }
+  .section-tag {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 3.5vw, 44px);
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .section-desc {
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 1.7;
+    max-width: 580px;
+  }
+
+  /* ── SERVICES ── */
+  .services { background: var(--white); }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 60px;
+  }
+  .service-card {
+    border: 1px solid var(--light-gray);
+    border-radius: 16px;
+    padding: 36px 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.35s;
+    cursor: default;
+  }
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--accent), var(--gold));
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.35s;
+  }
+  .service-card:hover {
+    box-shadow: 0 16px 48px rgba(10,22,40,0.1);
+    transform: translateY(-6px);
+    border-color: transparent;
+  }
+  .service-card:hover::before { transform: scaleY(1); }
+  .service-icon {
+    width: 52px; height: 52px;
+    background: linear-gradient(135deg, rgba(200,144,46,0.12), rgba(232,184,75,0.12));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .service-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+  .service-desc {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.7;
+  }
+  .service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 16px;
+  }
+  .service-tag {
+    background: rgba(200,144,46,0.08);
+    color: var(--accent);
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+
+  /* ── PROCESS ── */
+  .process { background: var(--off-white); }
+  .process-steps {
+    display: flex;
+    gap: 0;
+    margin-top: 60px;
+    position: relative;
+  }
+  .process-steps::after {
+    content: '';
+    position: absolute;
+    top: 36px;
+    left: 80px;
+    right: 80px;
+    height: 1px;
+    background: linear-gradient(to right, var(--accent), var(--gold), var(--accent));
+    opacity: 0.3;
+  }
+  .step {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+  }
+  .step-num {
+    width: 72px; height: 72px;
+    background: var(--white);
+    border: 2px solid var(--light-gray);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 0 auto 20px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  }
+  .step:hover .step-num {
+    background: linear-gradient(135deg, var(--accent), var(--gold));
+    color: var(--white);
+    border-color: transparent;
+    box-shadow: 0 8px 24px rgba(200,144,46,0.35);
+    transform: scale(1.08);
+  }
+  .step-title { font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 8px; }
+  .step-desc { font-size: 13px; color: var(--gray); line-height: 1.6; }
+
+  /* ── MULTILINGUAL SECTION ── */
+  .multilang { background: var(--navy); overflow: hidden; position: relative; }
+  .multilang::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(26,58,110,0.6) 0%, transparent 70%);
+  }
+  .multilang-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 40px;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .multilang .section-title { color: var(--white); }
+  .multilang .section-desc { color: rgba(255,255,255,0.6); }
+
+  .lang-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .lang-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(200,144,46,0.2);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .lang-card:hover {
+    background: rgba(200,144,46,0.15);
+    border-color: rgba(200,144,46,0.5);
+    transform: translateY(-4px);
+  }
+  .lang-flag { font-size: 28px; margin-bottom: 8px; }
+  .lang-name { font-size: 13px; color: rgba(255,255,255,0.8); font-weight: 500; }
+  .lang-native { font-size: 11px; color: rgba(255,255,255,0.4); margin-top: 2px; }
+
+  /* ── ABOUT ── */
+  .about { background: var(--white); }
+  .about-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .about-img-wrap {
+    position: relative;
+  }
+  .about-img-box {
+    background: linear-gradient(135deg, var(--navy), var(--deep-blue));
+    border-radius: 20px;
+    padding: 60px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .about-img-box::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200,144,46,0.15), transparent);
+  }
+  .about-name-ko {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .about-name-en {
+    font-size: 18px;
+    color: var(--gold);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .about-title-badge {
+    display: inline-block;
+    background: rgba(200,144,46,0.2);
+    border: 1px solid rgba(200,144,46,0.4);
+    color: var(--gold);
+    font-size: 12px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+  }
+  .about-float {
+    position: absolute;
+    bottom: -16px;
+    right: -16px;
+    background: linear-gradient(135deg, var(--accent), var(--gold));
+    color: var(--white);
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 0 8px 24px rgba(200,144,46,0.4);
+  }
+  .about-content .section-title { color: var(--navy); }
+  .about-features { list-style: none; margin-top: 28px; display: flex; flex-direction: column; gap: 16px; }
+  .about-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .about-features li::before {
+    content: '✓';
+    width: 24px; height: 24px;
+    background: linear-gradient(135deg, var(--accent), var(--gold));
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  /* ── CONTACT ── */
+  .contact { background: var(--off-white); }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 60px;
+    margin-top: 60px;
+  }
+  .contact-info { display: flex; flex-direction: column; gap: 20px; }
+  .contact-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: var(--white);
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid var(--light-gray);
+    transition: box-shadow 0.2s;
+  }
+  .contact-item:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+  .contact-icon {
+    width: 42px; height: 42px;
+    background: linear-gradient(135deg, rgba(200,144,46,0.12), rgba(232,184,75,0.12));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .contact-item-title { font-size: 12px; color: var(--gray); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+  .contact-item-val { font-size: 15px; color: var(--navy); font-weight: 500; }
+
+  /* Contact form */
+  .contact-form {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid var(--light-gray);
+  }
+  .form-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 24px;
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group { margin-bottom: 16px; }
+  .form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--gray);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    color: var(--text);
+    background: var(--off-white);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(200,144,46,0.12);
+    background: var(--white);
+  }
+  .form-group textarea { height: 100px; resize: vertical; }
+  .form-submit {
+    width: 100%;
+    background: linear-gradient(135deg, var(--accent), var(--gold));
+    color: var(--white);
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.2s;
+    font-family: inherit;
+    letter-spacing: 0.5px;
+  }
+  .form-submit:hover { opacity: 0.9; transform: translateY(-1px); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #1e3a5f;
+    padding: 60px 40px 32px;
+  }
+  .footer-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 32px;
+  }
+  .footer-brand .name {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .footer-brand .desc {
+    font-size: 13px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.7;
+    margin-top: 12px;
+  }
+  .footer-col-title {
+    color: #48cae4;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li {
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a {
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+  }
+  .footer-col ul li a:hover { color: #48cae4; }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-copy { font-size: 12px; color: rgba(255,255,255,0.35); }
+  .footer-lic { font-size: 12px; color: rgba(255,255,255,0.35); }
+
+  /* ── FLOATING CTA ── */
+  .floating-cta {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+  }
+  .float-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--white);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--navy);
+  }
+  .float-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,0.2); }
+  .float-btn.primary {
+    background: linear-gradient(135deg, var(--accent), var(--gold));
+    color: var(--white);
+  }
+  .float-icon { font-size: 18px; }
+
+  /* ── MULTILINGUAL TEXT OVERRIDES ── */
+  body.lang-zh { font-family: 'DM Sans', 'Noto Sans SC', sans-serif; }
+  body.lang-ja { font-family: 'DM Sans', 'Noto Sans JP', sans-serif; }
+
+  [data-lang] { display: none; }
+  [data-lang="ko"] { display: block; }
+  span[data-lang] { display: none; }
+  span[data-lang="ko"] { display: inline; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+    .hero-stats { grid-template-columns: repeat(4, 1fr); }
+    .hero-stats .stat-card:nth-child(1) { grid-column: span 1; }
+    .about-inner, .multilang-inner { grid-template-columns: 1fr; gap: 40px; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 768px) {
+    .header { padding: 16px 20px; }
+    .nav-links { display: none; }
+    .section { padding: 60px 20px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .process-steps { flex-direction: column; gap: 32px; }
+    .process-steps::after { display: none; }
+    .lang-grid { grid-template-columns: repeat(2, 1fr); }
+    .lang-bar-inner { padding: 0 20px; }
+    .footer-top { grid-template-columns: 1fr; gap: 32px; }
+    .form-row { grid-template-columns: 1fr; }
+    .hero-stats { grid-template-columns: 1fr 1fr; }
+    .hero-stats .stat-card:nth-child(1) { grid-column: span 2; }
+  }
+</style>
+</head>
+<body class="lang-ko">
+
+<!-- LANGUAGE BAR -->
+<div class="lang-bar">
+  <div class="lang-bar-inner">
+    <div class="lang-label">Language</div>
+    <div class="lang-buttons">
+      <button class="lang-btn active" onclick="setLang('ko')">한국어</button>
+      <button class="lang-btn" onclick="setLang('en')">English</button>
+      <button class="lang-btn" onclick="setLang('zh')">中文</button>
+      <button class="lang-btn" onclick="setLang('bn')">বাংলা</button>
+      <button class="lang-btn" onclick="setLang('ne')">नेपाली</button>
+      <button class="lang-btn" onclick="setLang('hi')">हिंदी</button>
+      <button class="lang-btn" onclick="setLang('ja')">日本語</button>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo-wrap">
+    <div class="logo-emblem">S&K</div>
+    <div class="logo-text">
+      <div class="name">S&K 행정사사무소</div>
+      <div class="sub">Immigration & Visa Experts</div>
+    </div>
+  </div>
+  <a href="tel:+82428266516" class="header-cta" style="display:flex;align-items:center;gap:8px;text-decoration:none;">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 5.55 5.55l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    +82 42-826-6516
+  </a>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-circle"></div>
+  <div class="hero-bg-circle"></div>
+  <div class="hero-bg-circle"></div>
+
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span>
+          <span data-lang="ko">대전 외국인 비자 전문</span>
+          <span data-lang="en">Daejeon Immigration Experts</span>
+          <span data-lang="zh">大田外国人签证专家</span>
+          <span data-lang="bn">দাজেওন ইমিগ্রেশন বিশেষজ্ঞ</span>
+          <span data-lang="ne">दाजेओन आप्रवासन विशेषज्ञ</span>
+          <span data-lang="hi">दाएजियोन आव्रजन विशेषज्ञ</span>
+          <span data-lang="ja">大田入国管理専門</span>
+        </span>
+      </div>
+
+      <h1>
+        <span data-lang="ko">한국 생활의 <br><span class="highlight">첫 걸음</span>은<br>S&K와 함께</span>
+        <span data-lang="en">Your <span class="highlight">Trusted</span><br>Korea Visa<br>Partner</span>
+        <span data-lang="zh">韩国签证，<br><span class="highlight">专业可信</span><br>的伙伴</span>
+        <span data-lang="bn">কোরিয়ায় আপনার<br><span class="highlight">বিশ্বস্ত</span><br>ভিসা সহায়তা</span>
+        <span data-lang="ne">कोरियामा तपाईंको<br><span class="highlight">विश्वसनीय</span><br>भिसा सहयोगी</span>
+        <span data-lang="hi">कोरिया में आपका<br><span class="highlight">विश्वसनीय</span><br>वीज़ा साथी</span>
+        <span data-lang="ja">韓国ビザ申請の<br><span class="highlight">頼れる</span><br>パートナー</span>
+      </h1>
+
+      <p class="hero-sub">
+        <span data-lang="ko">S&K행정사사무소는 외국인 체류비자, 유학생 입학, 귀화·영주권 등 이민 관련 모든 업무를 전문적으로 대행합니다. 복잡한 절차를 쉽고 빠르게 해결해 드립니다.</span>
+        <span data-lang="en">S&K Immigration Office specializes in all visa, student enrollment, naturalization, and residency matters in Korea. We make complex procedures simple and fast.</span>
+        <span data-lang="zh">S&K行政士事务所专业处理外国人居留签证、留学生入学、归化·永久居留权等所有移民相关业务，让复杂手续变得简单快捷。</span>
+        <span data-lang="bn">S&K ইমিগ্রেশন অফিস কোরিয়ায় সকল ভিসা, শিক্ষার্থী ভর্তি, নাগরিকত্ব এবং বাসস্থান বিষয়ে বিশেষজ্ঞ। আমরা জটিল প্রক্রিয়াকে সহজ করি।</span>
+        <span data-lang="ne">S&K इमिग्रेसन अफिस कोरियामा सबै भिसा, विद्यार्थी भर्ना, नागरिकता र बसोबास मामिलामा विशेषज्ञ छ।</span>
+        <span data-lang="hi">S&K इमिग्रेशन ऑफिस कोरिया में सभी वीज़ा, छात्र नामांकन, नागरिकता और निवास मामलों में विशेषज्ञ है।</span>
+        <span data-lang="ja">S&K行政士事務所は韓国の全てのビザ、留学生入学、帰化・永住権などの移民関連業務を専門的に代行します。</span>
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#mainTabBar" class="btn-primary" onclick="switchTab('contact')">
+          <span data-lang="ko">📋 무료 상담 신청</span>
+          <span data-lang="en">📋 Free Consultation</span>
+          <span data-lang="zh">📋 免费咨询申请</span>
+          <span data-lang="bn">📋 বিনামূল্যে পরামর্শ</span>
+          <span data-lang="ne">📋 निःशुल्क परामर्श</span>
+          <span data-lang="hi">📋 मुफ्त परामर्श</span>
+          <span data-lang="ja">📋 無料相談申込</span>
+        </a>
+        <a href="#mainTabBar" class="btn-outline" onclick="switchTab('services')">
+          <span data-lang="ko">서비스 보기 →</span>
+          <span data-lang="en">Our Services →</span>
+          <span data-lang="zh">了解服务 →</span>
+          <span data-lang="bn">আমাদের সেবা →</span>
+          <span data-lang="ne">हाम्रो सेवाहरू →</span>
+          <span data-lang="hi">हमारी सेवाएं →</span>
+          <span data-lang="ja">サービス一覧 →</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-number">10+</div>
+        <div class="stat-label">
+          <span data-lang="ko">년 이민 전문 경력</span>
+          <span data-lang="en">Years of Immigration Experience</span>
+          <span data-lang="zh">年移民专业经验</span>
+          <span data-lang="bn">বছরের অভিজ্ঞতা</span>
+          <span data-lang="ne">वर्षको अनुभव</span>
+          <span data-lang="hi">वर्षों का अनुभव</span>
+          <span data-lang="ja">年の移民専門経験</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">7</div>
+        <div class="stat-label">
+          <span data-lang="ko">개 언어 상담 지원</span>
+          <span data-lang="en">Languages Supported</span>
+          <span data-lang="zh">种语言服务支持</span>
+          <span data-lang="bn">টি ভাষায় সহায়তা</span>
+          <span data-lang="ne">भाषामा सहयोग</span>
+          <span data-lang="hi">भाषाओं में सहायता</span>
+          <span data-lang="ja">言語対応</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">98%</div>
+        <div class="stat-label">
+          <span data-lang="ko">비자 승인률</span>
+          <span data-lang="en">Visa Approval Rate</span>
+          <span data-lang="zh">签证批准率</span>
+          <span data-lang="bn">ভিসা অনুমোদনের হার</span>
+          <span data-lang="ne">भिसा स्वीकृति दर</span>
+          <span data-lang="hi">वीज़ा स्वीकृति दर</span>
+          <span data-lang="ja">ビザ承認率</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">1,000+</div>
+        <div class="stat-label">
+          <span data-lang="ko">성공 사례</span>
+          <span data-lang="en">Successful Cases</span>
+          <span data-lang="zh">成功案例</span>
+          <span data-lang="bn">সফল কেস</span>
+          <span data-lang="ne">सफल केसहरू</span>
+          <span data-lang="hi">सफल केस</span>
+          <span data-lang="ja">成功事例</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span class="ticker-item">🇰🇷 외국인 비자 전문 행정사사무소</span>
+    <span class="ticker-item ticker-dot">✦</span>
+    <span class="ticker-item">🌏 Korea Visa & Immigration Experts</span>
+    <span class="ticker-item ticker-dot">✦</span>
+    <span class="ticker-item">🇨🇳 韩国签证专业行政士事务所</span>
+    <span class="ticker-item ticker-dot">✦</span>
+    <span class="ticker-item">🇧🇩 কোরিয়া ভিসা বিশেষজ্ঞ</span>
+    <span class="ticker-item ticker-dot">✦</span>
+    <span class="ticker-item">🇳🇵 कोरिया भिसा विशेषज्ञ</span>
+    <span class="ticker-item ticker-dot">✦</span>
+    <span class="ticker-item">🇮🇳 कोरिया वीज़ा विशेषज्ञ</span>
+    <span class="ticker-item ticker-dot">✦</span>
+    <span class="ticker-item">🇯🇵 韓国ビザ専門行政士事務所</span>
+    <span class="ticker-item ticker-dot">✦</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="ticker-item">🇰🇷 외국인 비자 전문 행정사사무소</span>
+    <span class="ticker-item ticker-dot">✦</span>
+    <span class="ticker-item">🌏 Korea Visa & Immigration Experts</span>
+    <span class="ticker-item ticker-dot">✦</span>
+    <span class="ticker-item">🇨🇳 韩国签证专业行政士事务所</span>
+    <span class="ticker-item ticker-dot">✦</span>
+    <span class="ticker-item">🇧🇩 কোরিয়া ভিসা বিশেষজ্ঞ</span>
+    <span class="ticker-item ticker-dot">✦</span>
+    <span class="ticker-item">🇳🇵 कोरिया भिसा विशेषज्ञ</span>
+    <span class="ticker-item ticker-dot">✦</span>
+    <span class="ticker-item">🇮🇳 कोरिया वीज़ा विशेषज्ञ</span>
+    <span class="ticker-item ticker-dot">✦</span>
+    <span class="ticker-item">🇯🇵 韓国ビザ専門行政士事務所</span>
+  </div>
+</div>
+
+<!-- TAB BAR (sticky) — 히어로 + 티커 아래 고정 -->
+<div class="main-tab-bar" id="mainTabBar">
+  <div class="main-tab-inner">
+    <button class="main-tab-btn active" id="mtab-services" onclick="switchTab('services')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      <span class="tab-label-ko">서비스</span>
+      <span class="tab-label-en" style="display:none">Services</span>
+      <span class="tab-label-zh" style="display:none">服务</span>
+      <span class="tab-label-bn" style="display:none">সেবা</span>
+      <span class="tab-label-ne" style="display:none">सेवाहरू</span>
+      <span class="tab-label-hi" style="display:none">सेवाएं</span>
+      <span class="tab-label-ja" style="display:none">サービス</span>
+    </button>
+    <button class="main-tab-btn" id="mtab-process" onclick="switchTab('process')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      <span class="tab-label-ko">신청절차</span>
+      <span class="tab-label-en" style="display:none">Process</span>
+      <span class="tab-label-zh" style="display:none">申请流程</span>
+      <span class="tab-label-bn" style="display:none">প্রক্রিয়া</span>
+      <span class="tab-label-ne" style="display:none">प्रक्रिया</span>
+      <span class="tab-label-hi" style="display:none">प्रक्रिया</span>
+      <span class="tab-label-ja" style="display:none">申請手続き</span>
+    </button>
+    <button class="main-tab-btn" id="mtab-about" onclick="switchTab('about')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span class="tab-label-ko">사무소소개</span>
+      <span class="tab-label-en" style="display:none">About</span>
+      <span class="tab-label-zh" style="display:none">关于我们</span>
+      <span class="tab-label-bn" style="display:none">পরিচয়</span>
+      <span class="tab-label-ne" style="display:none">हाम्रोबारे</span>
+      <span class="tab-label-hi" style="display:none">हमारे बारे में</span>
+      <span class="tab-label-ja" style="display:none">事務所紹介</span>
+    </button>
+    <button class="main-tab-btn" id="mtab-contact" onclick="switchTab('contact')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <span class="tab-label-ko">상담신청</span>
+      <span class="tab-label-en" style="display:none">Contact</span>
+      <span class="tab-label-zh" style="display:none">联系我们</span>
+      <span class="tab-label-bn" style="display:none">যোগাযোগ</span>
+      <span class="tab-label-ne" style="display:none">सम्पर्क</span>
+      <span class="tab-label-hi" style="display:none">संपर्क</span>
+      <span class="tab-label-ja" style="display:none">お問い合わせ</span>
+    </button>
+  </div>
+</div>
+
+<!-- TAB CONTENT WRAPPER -->
+<div class="tab-panels-wrap">
+
+<!-- ===== 서비스 탭 ===== -->
+<div class="tab-panel active" id="panel-services">
+<!-- SERVICES -->
+<section class="section services" id="services">
+  <div class="section-inner">
+    <div class="section-tag">
+      <span data-lang="ko">전문 서비스</span>
+      <span data-lang="en">Our Services</span>
+      <span data-lang="zh">专业服务</span>
+      <span data-lang="bn">আমাদের সেবা</span>
+      <span data-lang="ne">हाम्रा सेवाहरू</span>
+      <span data-lang="hi">हमारी सेवाएं</span>
+      <span data-lang="ja">専門サービス</span>
+    </div>
+    <h2 class="section-title">
+      <span data-lang="ko">S&K가 도와드리는<br>모든 비자 서비스</span>
+      <span data-lang="en">Complete Visa &<br>Immigration Services</span>
+      <span data-lang="zh">S&K提供的<br>全方位签证服务</span>
+      <span data-lang="bn">S&K এর সম্পূর্ণ<br>ভিসা সেবা</span>
+      <span data-lang="ne">S&K का सम्पूर्ण<br>भिसा सेवाहरू</span>
+      <span data-lang="hi">S&K की पूर्ण<br>वीज़ा सेवाएं</span>
+      <span data-lang="ja">S&Kが提供する<br>全ビザサービス</span>
+    </h2>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">🏢</div>
+        <div class="service-title">
+          <span data-lang="ko">취업 비자 (E 계열)</span>
+          <span data-lang="en">Work Visa (E Series)</span>
+          <span data-lang="zh">就业签证 (E系列)</span>
+          <span data-lang="bn">ওয়ার্ক ভিসা (E সিরিজ)</span>
+          <span data-lang="ne">कार्य भिसा (E श्रृंखला)</span>
+          <span data-lang="hi">वर्क वीज़ा (E सीरीज)</span>
+          <span data-lang="ja">就労ビザ (Eシリーズ)</span>
+        </div>
+        <div class="service-desc">
+          <span data-lang="ko">E-7 특정활동, E-9 비전문취업, E-6 예술흥행 등 취업 관련 비자 신청 및 연장 대행.</span>
+          <span data-lang="en">E-7 Special Activity, E-9 Non-Professional Employment, E-6 and other work-related visa applications and extensions.</span>
+          <span data-lang="zh">E-7特定活动、E-9非专业就业、E-6艺术表演等就业相关签证申请及延期代办。</span>
+          <span data-lang="bn">E-7 বিশেষ কার্যক্রম, E-9 অ-পেশাদার কর্মসংস্থান এবং অন্যান্য ওয়ার্ক ভিসা আবেদন।</span>
+          <span data-lang="ne">E-7 विशेष गतिविधि, E-9 गैर-पेशेवर रोजगार र अन्य कार्य भिसा आवेदनहरू।</span>
+          <span data-lang="hi">E-7 विशेष गतिविधि, E-9 गैर-पेशेवर रोजगार और अन्य वर्क वीज़ा आवेदन।</span>
+          <span data-lang="ja">E-7特定活動、E-9非専門就業、E-6などの就労ビザ申請・更新代行。</span>
+        </div>
+        <div class="service-tags">
+          <span class="service-tag">E-7</span>
+          <span class="service-tag">E-9</span>
+          <span class="service-tag">E-6</span>
+          <span class="service-tag">E-4</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🎓</div>
+        <div class="service-title">
+          <span data-lang="ko">유학 비자 & 대학 입학</span>
+          <span data-lang="en">Student Visa & Enrollment</span>
+          <span data-lang="zh">留学签证 & 大学入学</span>
+          <span data-lang="bn">স্টুডেন্ট ভিসা ও ভর্তি</span>
+          <span data-lang="ne">विद्यार्थी भिसा र भर्ना</span>
+          <span data-lang="hi">स्टूडेंट वीज़ा और प्रवेश</span>
+          <span data-lang="ja">留学ビザ＆大学入学</span>
+        </div>
+        <div class="service-desc">
+          <span data-lang="ko">D-2, D-4 유학 비자 발급부터 국내 대학·어학원 입학 연계 서비스. 현지 유학원 제휴 네트워크 운영.</span>
+          <span data-lang="en">D-2, D-4 student visa processing and university/language school enrollment support. Partner network with overseas education agencies.</span>
+          <span data-lang="zh">D-2、D-4留学签证申请及国内大学、语言学院入学联系服务。与海外留学中介建立合作网络。</span>
+          <span data-lang="bn">D-2, D-4 ভিসা প্রক্রিয়াকরণ এবং বিশ্ববিদ্যালয় ভর্তি সহায়তা। বিদেশী শিক্ষা সংস্থার সাথে অংশীদার নেটওয়ার্ক।</span>
+          <span data-lang="ne">D-2, D-4 भिसा प्रक्रिया र विश्वविद्यालय भर्ना सहयोग। विदेशी शिक्षा एजेन्सीसँग साझेदारी नेटवर्क।</span>
+          <span data-lang="hi">D-2, D-4 वीज़ा प्रक्रिया और विश्वविद्यालय प्रवेश सहायता। विदेशी शिक्षा एजेंसियों के साथ भागीदारी।</span>
+          <span data-lang="ja">D-2、D-4留学ビザ申請から国内大学・語学学校入学サポート。海外留学エージェントとの提携ネットワーク。</span>
+        </div>
+        <div class="service-tags">
+          <span class="service-tag">D-2</span>
+          <span class="service-tag">D-4</span>
+          <span class="service-tag">입학컨설팅</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">👨‍👩‍👧</div>
+        <div class="service-title">
+          <span data-lang="ko">결혼 & 가족 비자</span>
+          <span data-lang="en">Marriage & Family Visa</span>
+          <span data-lang="zh">婚姻 & 家庭签证</span>
+          <span data-lang="bn">বিবাহ ও পারিবারিক ভিসা</span>
+          <span data-lang="ne">विवाह र परिवार भिसा</span>
+          <span data-lang="hi">विवाह और परिवार वीज़ा</span>
+          <span data-lang="ja">結婚・家族ビザ</span>
+        </div>
+        <div class="service-desc">
+          <span data-lang="ko">F-2 결혼이민 비자, F-1 방문동거, 가족 초청 및 동반가족 체류 자격 취득 대행.</span>
+          <span data-lang="en">F-2 Marriage Immigration, F-1 Family Visit, family invitation and dependent visa applications.</span>
+          <span data-lang="zh">F-2婚姻移民签证、F-1访问同居、家庭邀请及随行家属居留资格代办。</span>
+          <span data-lang="bn">F-2 বিবাহ অভিবাসন, F-1 পারিবারিক ভিজিট এবং পরিবার আমন্ত্রণ ভিসা।</span>
+          <span data-lang="ne">F-2 विवाह आप्रवासन, F-1 परिवार भ्रमण र परिवार निमन्त्रणा भिसा।</span>
+          <span data-lang="hi">F-2 विवाह आव्रजन, F-1 परिवार विज़िट और परिवार आमंत्रण वीज़ा।</span>
+          <span data-lang="ja">F-2結婚移民ビザ、F-1訪問同居、家族招待・同伴家族在留資格取得代行。</span>
+        </div>
+        <div class="service-tags">
+          <span class="service-tag">F-2</span>
+          <span class="service-tag">F-1</span>
+          <span class="service-tag">F-3</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <div class="service-title">
+          <span data-lang="ko">영주권 & 귀화</span>
+          <span data-lang="en">Permanent Residency & Naturalization</span>
+          <span data-lang="zh">永久居留 & 归化</span>
+          <span data-lang="bn">স্থায়ী বাসস্থান ও নাগরিকত্ব</span>
+          <span data-lang="ne">स्थायी बसोबास र नागरिकता</span>
+          <span data-lang="hi">स्थायी निवास और नागरिकता</span>
+          <span data-lang="ja">永住権・帰化</span>
+        </div>
+        <div class="service-desc">
+          <span data-lang="ko">F-5 영주권 신청, 귀화 신청(간이·일반), 국적 회복 및 복수국적 관련 업무 전문 대행.</span>
+          <span data-lang="en">F-5 Permanent Residency, naturalization (simplified/general), nationality restoration and dual citizenship matters.</span>
+          <span data-lang="zh">F-5永久居留申请、归化申请(简易·一般)、国籍恢复及双重国籍相关业务专业代办。</span>
+          <span data-lang="bn">F-5 স্থায়ী বাসস্থান, নাগরিকত্ব আবেদন এবং দ্বৈত নাগরিকত্ব বিষয়ক কাজ।</span>
+          <span data-lang="ne">F-5 स्थायी बसोबास, नागरिकता आवेदन र दोहोरो नागरिकता सम्बन्धी कार्यहरू।</span>
+          <span data-lang="hi">F-5 स्थायी निवास, नागरिकता आवेदन और दोहरी नागरिकता से जुड़े कार्य।</span>
+          <span data-lang="ja">F-5永住権申請、帰化申請(簡易・一般)、国籍回復・多重国籍関連業務代行。</span>
+        </div>
+        <div class="service-tags">
+          <span class="service-tag">F-5</span>
+          <span class="service-tag">귀화</span>
+          <span class="service-tag">국적</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">💼</div>
+        <div class="service-title">
+          <span data-lang="ko">사업 & 투자 비자</span>
+          <span data-lang="en">Business & Investment Visa</span>
+          <span data-lang="zh">商业 & 投资签证</span>
+          <span data-lang="bn">ব্যবসা ও বিনিয়োগ ভিসা</span>
+          <span data-lang="ne">व्यापार र लगानी भिसा</span>
+          <span data-lang="hi">व्यापार और निवेश वीज़ा</span>
+          <span data-lang="ja">ビジネス・投資ビザ</span>
+        </div>
+        <div class="service-desc">
+          <span data-lang="ko">D-8 기업투자, D-9 무역경영, F-2 거주 비자 취득 및 외국인 법인 설립 관련 행정 업무 대행.</span>
+          <span data-lang="en">D-8 Corporate Investment, D-9 Trade/Business Management, F-2 Residence visa and foreign company establishment support.</span>
+          <span data-lang="zh">D-8企业投资、D-9贸易经营、F-2居住签证及外国法人设立相关行政业务代办。</span>
+          <span data-lang="bn">D-8 কর্পোরেট বিনিয়োগ, D-9 ট্রেড ম্যানেজমেন্ট এবং বিদেশী কোম্পানি স্থাপন সহায়তা।</span>
+          <span data-lang="ne">D-8 कर्पोरेट लगानी, D-9 व्यापार व्यवस्थापन र विदेशी कम्पनी स्थापना सहयोग।</span>
+          <span data-lang="hi">D-8 कॉर्पोरेट निवेश, D-9 व्यापार प्रबंधन और विदेशी कंपनी स्थापना सहायता।</span>
+          <span data-lang="ja">D-8企業投資、D-9貿易経営、F-2居住ビザ・外国法人設立関連行政業務代行。</span>
+        </div>
+        <div class="service-tags">
+          <span class="service-tag">D-8</span>
+          <span class="service-tag">D-9</span>
+          <span class="service-tag">법인설립</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔄</div>
+        <div class="service-title">
+          <span data-lang="ko">비자 연장 & 변경</span>
+          <span data-lang="en">Visa Extension & Change</span>
+          <span data-lang="zh">签证延期 & 变更</span>
+          <span data-lang="bn">ভিসা বিস্তার ও পরিবর্তন</span>
+          <span data-lang="ne">भिसा विस्तार र परिवर्तन</span>
+          <span data-lang="hi">वीज़ा विस्तार और परिवर्तन</span>
+          <span data-lang="ja">ビザ更新・変更</span>
+        </div>
+        <div class="service-desc">
+          <span data-lang="ko">체류기간 연장, 체류자격 변경, 재입국 허가, 외국인등록증 발급 등 출입국 민원 전반 대행.</span>
+          <span data-lang="en">Residence period extension, status change, re-entry permit, alien registration card issuance and all immigration affairs.</span>
+          <span data-lang="zh">居留期延长、居留资格变更、再入境许可、外国人登录证申请等出入境民事业务全面代办。</span>
+          <span data-lang="bn">বাসস্থানের মেয়াদ বৃদ্ধি, স্ট্যাটাস পরিবর্তন, পুনরায় প্রবেশের অনুমতি এবং বিদেশী নিবন্ধন কার্ড।</span>
+          <span data-lang="ne">बसोबास अवधि विस्तार, स्थिति परिवर्तन, पुन: प्रवेश अनुमति र विदेशी दर्ता कार्ड।</span>
+          <span data-lang="hi">निवास अवधि विस्तार, स्थिति परिवर्तन, पुनः प्रवेश परमिट और विदेशी पंजीकरण कार्ड।</span>
+          <span data-lang="ja">在留期間延長、在留資格変更、再入国許可、外国人登録証発行など出入国民事業務全般代行。</span>
+        </div>
+        <div class="service-tags">
+          <span class="service-tag">연장</span>
+          <span class="service-tag">변경</span>
+          <span class="service-tag">외국인등록</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- MULTILINGUAL SUPPORT (탭 밖 - 항상 표시) -->
+<section class="multilang" id="languages">
+  <div class="multilang-inner">
+    <div>
+      <div class="section-tag">
+        <span data-lang="ko">다국어 상담 지원</span>
+        <span data-lang="en">Multilingual Support</span>
+        <span data-lang="zh">多语言咨询支持</span>
+        <span data-lang="bn">বহুভাষিক সহায়তা</span>
+        <span data-lang="ne">बहुभाषिक सहयोग</span>
+        <span data-lang="hi">बहुभाषी सहायता</span>
+        <span data-lang="ja">多言語対応</span>
+      </div>
+      <h2 class="section-title">
+        <span data-lang="ko">7개 언어로<br>상담드립니다</span>
+        <span data-lang="en">We Consult in<br>7 Languages</span>
+        <span data-lang="zh">提供 7 种语言<br>咨询服务</span>
+        <span data-lang="bn">৭টি ভাষায়<br>পরামর্শ দিই</span>
+        <span data-lang="ne">७ भाषामा<br>परामर्श दिन्छौं</span>
+        <span data-lang="hi">7 भाषाओं में<br>परामर्श करते हैं</span>
+        <span data-lang="ja">7言語で<br>ご相談承ります</span>
+      </h2>
+      <p class="section-desc">
+        <span data-lang="ko">언어 장벽 없이 모국어로 편안하게 상담받으세요. 한국어, 영어, 중국어, 방글라데시어, 네팔어, 힌디어, 일본어로 전문 상담이 가능합니다.</span>
+        <span data-lang="en">Consult comfortably in your native language without language barriers. Professional consultation available in Korean, English, Chinese, Bengali, Nepali, Hindi, and Japanese.</span>
+        <span data-lang="zh">用母语舒适地咨询，无语言障碍。提供韩语、英语、中文、孟加拉语、尼泊尔语、印地语、日语的专业咨询。</span>
+        <span data-lang="bn">ভাষার বাধা ছাড়াই আপনার মাতৃভাষায় আরামদায়কভাবে পরামর্শ নিন।</span>
+        <span data-lang="ne">भाषाको बाधा बिना आफ्नै मातृभाषामा सहजतापूर्वक परामर्श लिनुहोस्।</span>
+        <span data-lang="hi">भाषाई बाधा के बिना अपनी मातृभाषा में आराम से परामर्श लें।</span>
+        <span data-lang="ja">言語の壁なく母国語でお気軽にご相談ください。</span>
+      </p>
+    </div>
+
+    <div class="lang-grid">
+      <div class="lang-card" onclick="setLang('ko')">
+        <div class="lang-flag">🇰🇷</div>
+        <div class="lang-name">Korean</div>
+        <div class="lang-native">한국어</div>
+      </div>
+      <div class="lang-card" onclick="setLang('en')">
+        <div class="lang-flag">🇺🇸</div>
+        <div class="lang-name">English</div>
+        <div class="lang-native">English</div>
+      </div>
+      <div class="lang-card" onclick="setLang('zh')">
+        <div class="lang-flag">🇨🇳</div>
+        <div class="lang-name">Chinese</div>
+        <div class="lang-native">中文</div>
+      </div>
+      <div class="lang-card" onclick="setLang('bn')">
+        <div class="lang-flag">🇧🇩</div>
+        <div class="lang-name">Bengali</div>
+        <div class="lang-native">বাংলা</div>
+      </div>
+      <div class="lang-card" onclick="setLang('ne')">
+        <div class="lang-flag">🇳🇵</div>
+        <div class="lang-name">Nepali</div>
+        <div class="lang-native">नेपाली</div>
+      </div>
+      <div class="lang-card" onclick="setLang('hi')">
+        <div class="lang-flag">🇮🇳</div>
+        <div class="lang-name">Hindi</div>
+        <div class="lang-native">हिंदी</div>
+      </div>
+      <div class="lang-card" onclick="setLang('ja')" style="grid-column: span 3; margin: 0 auto; width: 120px;">
+        <div class="lang-flag">🇯🇵</div>
+        <div class="lang-name">Japanese</div>
+        <div class="lang-native">日本語</div>
+      </div>
+    </div>
+  </div>
+</section>
+</div><!-- /panel-services -->
+
+<!-- ===== 신청절차 탭 ===== -->
+<div class="tab-panel" id="panel-process">
+<!-- PROCESS -->
+<section class="section process" id="process">
+  <div class="section-inner">
+    <div class="section-tag">
+      <span data-lang="ko">간편한 신청 절차</span>
+      <span data-lang="en">Simple Application Process</span>
+      <span data-lang="zh">简便申请流程</span>
+      <span data-lang="bn">সহজ আবেদন প্রক্রিয়া</span>
+      <span data-lang="ne">सरल आवेदन प्रक्रिया</span>
+      <span data-lang="hi">सरल आवेदन प्रक्रिया</span>
+      <span data-lang="ja">簡単な申請手順</span>
+    </div>
+    <h2 class="section-title">
+      <span data-lang="ko">4단계로 완성되는<br>비자 신청</span>
+      <span data-lang="en">4 Steps to Complete<br>Your Visa Application</span>
+      <span data-lang="zh">4个步骤完成<br>签证申请</span>
+      <span data-lang="bn">৪ ধাপে সম্পন্ন<br>ভিসা আবেদন</span>
+      <span data-lang="ne">४ चरणमा सम्पन्न<br>भिसा आवेदन</span>
+      <span data-lang="hi">4 चरणों में पूरा<br>वीज़ा आवेदन</span>
+      <span data-lang="ja">4ステップで完了<br>するビザ申請</span>
+    </h2>
+
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-title">
+          <span data-lang="ko">무료 상담</span>
+          <span data-lang="en">Free Consultation</span>
+          <span data-lang="zh">免费咨询</span>
+          <span data-lang="bn">বিনামূল্যে পরামর্শ</span>
+          <span data-lang="ne">निःशुल्क परामर्श</span>
+          <span data-lang="hi">मुफ्त परामर्श</span>
+          <span data-lang="ja">無料相談</span>
+        </div>
+        <div class="step-desc">
+          <span data-lang="ko">전화, 이메일, 방문 상담으로 비자 유형 및 필요 서류를 안내해 드립니다.</span>
+          <span data-lang="en">Contact us by phone, email, or in person. We'll guide you on visa type and required documents.</span>
+          <span data-lang="zh">通过电话、邮件或上门咨询，我们将指导您了解签证类型和所需文件。</span>
+          <span data-lang="bn">ফোন, ইমেইল বা ব্যক্তিগতভাবে যোগাযোগ করুন। ভিসার ধরন ও প্রয়োজনীয় কাগজপত্র জানাবো।</span>
+          <span data-lang="ne">फोन, इमेल वा व्यक्तिगत रूपमा सम्पर्क गर्नुहोस्। भिसा प्रकार र आवश्यक कागजातको जानकारी दिनेछौं।</span>
+          <span data-lang="hi">फोन, ईमेल या व्यक्तिगत रूप से संपर्क करें। वीज़ा प्रकार और आवश्यक दस्तावेज़ बताएंगे।</span>
+          <span data-lang="ja">電話・メール・来所でのご相談。ビザの種類と必要書類をご案内します。</span>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-title">
+          <span data-lang="ko">서류 준비</span>
+          <span data-lang="en">Document Preparation</span>
+          <span data-lang="zh">文件准备</span>
+          <span data-lang="bn">কাগজপত্র প্রস্তুতি</span>
+          <span data-lang="ne">कागजात तयारी</span>
+          <span data-lang="hi">दस्तावेज़ तैयारी</span>
+          <span data-lang="ja">書類準備</span>
+        </div>
+        <div class="step-desc">
+          <span data-lang="ko">체크리스트 제공 및 서류 번역·공증 대행. 부족한 서류도 함께 해결합니다.</span>
+          <span data-lang="en">Checklist provided; translation and notarization assistance. We help resolve any missing documents.</span>
+          <span data-lang="zh">提供清单并代办文件翻译·公证。缺少的文件也会协助解决。</span>
+          <span data-lang="bn">চেকলিস্ট প্রদান এবং অনুবাদ সহায়তা। অনুপস্থিত কাগজপত্র সমাধানে সাহায্য করি।</span>
+          <span data-lang="ne">चेकलिस्ट प्रदान र अनुवाद सहयोग। छुटेका कागजातहरू समाधान गर्न मद्दत गर्छौं।</span>
+          <span data-lang="hi">चेकलिस्ट और अनुवाद सहायता। लापता दस्तावेज़ समाधान में मदद करते हैं।</span>
+          <span data-lang="ja">チェックリスト提供・翻訳公証代行。不足書類の解決もサポートします。</span>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-title">
+          <span data-lang="ko">대행 신청</span>
+          <span data-lang="en">Application Submission</span>
+          <span data-lang="zh">代理申请</span>
+          <span data-lang="bn">আবেদন দাখিল</span>
+          <span data-lang="ne">आवेदन दर्ता</span>
+          <span data-lang="hi">आवेदन प्रस्तुति</span>
+          <span data-lang="ja">代行申請</span>
+        </div>
+        <div class="step-desc">
+          <span data-lang="ko">출입국관리사무소에 전문 행정사가 직접 신청. 추가 보완 요청 시 신속 대응.</span>
+          <span data-lang="en">Our licensed agent submits on your behalf at the immigration office. Swift response to any additional requests.</span>
+          <span data-lang="zh">持牌行政士直接向出入境管理局提交申请。如有补充要求，迅速应对。</span>
+          <span data-lang="bn">লাইসেন্সধারী এজেন্ট ইমিগ্রেশন অফিসে আপনার পক্ষে জমা দেন। অতিরিক্ত অনুরোধে দ্রুত সাড়া।</span>
+          <span data-lang="ne">इजाजतपत्र प्राप्त एजेन्टले आप्रवासन कार्यालयमा आपको तर्फबाट दर्ता गर्छन्।</span>
+          <span data-lang="hi">लाइसेंस प्राप्त एजेंट आव्रजन कार्यालय में आपकी ओर से जमा करते हैं।</span>
+          <span data-lang="ja">有資格の行政士が出入国管理局へ直接申請。追加要求への迅速な対応。</span>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-title">
+          <span data-lang="ko">결과 통보</span>
+          <span data-lang="en">Result Notification</span>
+          <span data-lang="zh">结果通知</span>
+          <span data-lang="bn">ফলাফল বিজ্ঞপ্তি</span>
+          <span data-lang="ne">नतिजा सूचना</span>
+          <span data-lang="hi">परिणाम अधिसूचना</span>
+          <span data-lang="ja">結果通知</span>
+        </div>
+        <div class="step-desc">
+          <span data-lang="ko">승인 결과를 즉시 안내드리고, 필요 시 체류카드 수령 방법까지 안내합니다.</span>
+          <span data-lang="en">Immediate notification of approval. Guidance on receiving your residence card if needed.</span>
+          <span data-lang="zh">立即通知批准结果，并指导如何领取居留证。</span>
+          <span data-lang="bn">অনুমোদনের তাৎক্ষণিক বিজ্ঞপ্তি। প্রয়োজনে বাসস্থান কার্ড গ্রহণের নির্দেশনা।</span>
+          <span data-lang="ne">स्वीकृतिको तत्काल सूचना। आवश्यक भएमा बसोबास कार्ड प्राप्त गर्ने निर्देशन।</span>
+          <span data-lang="hi">अनुमोदन की तत्काल अधिसूचना। यदि आवश्यक हो तो निवास कार्ड प्राप्त करने का मार्गदर्शन।</span>
+          <span data-lang="ja">承認結果を即時通知。必要に応じて在留カード受取方法もご案内。</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div><!-- /panel-process -->
+
+
+<!-- ===== 사무소소개 탭 ===== -->
+<div class="tab-panel" id="panel-about">
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-inner">
+    <div class="about-img-wrap">
+      <div class="about-img-box">
+        <!-- 사진 영역 -->
+        <div class="about-photo-wrap" onclick="document.getElementById('photoInput').click()" title="클릭하여 사진 업로드">
+          <img id="aboutPhoto" src="" alt="" style="display:none; width:120px; height:120px; border-radius:50%; object-fit:cover; border:3px solid var(--gold); margin-bottom:16px;">
+          <div id="photoPlaceholder" style="width:120px; height:120px; border-radius:50%; background:rgba(0,180,216,0.15); border:2px dashed rgba(0,180,216,0.5); display:flex; flex-direction:column; align-items:center; justify-content:center; margin:0 auto 16px; cursor:pointer; transition:all 0.2s;">
+            <span style="font-size:28px;">📷</span>
+            <span style="font-size:11px; color:rgba(255,255,255,0.5); margin-top:4px;">사진 추가</span>
+          </div>
+          <input type="file" id="photoInput" accept="image/*" style="display:none;" onchange="loadPhoto(event)">
+        </div>
+        <div class="about-name-ko">김철민</div>
+        <div class="about-name-en">KIM CHEOL MIN</div>
+        <div class="about-title-badge">대표 행정사 · Licensed Administrative Agent</div>
+        <br>
+        <div style="color:rgba(255,255,255,0.5); font-size:14px; line-height:1.8;">
+          행정사 등록번호<br>
+          <span style="color:var(--gold)">644-48-01024</span>
+        </div>
+      </div>
+      <div class="about-float">
+        📍 대전 유성구<br>
+        <span style="font-size:11px; opacity:0.8;">Daejeon, Yuseong-gu</span>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <div class="section-tag">
+        <span data-lang="ko">대표 행정사 소개</span>
+        <span data-lang="en">About the Director</span>
+        <span data-lang="zh">代表行政士介绍</span>
+        <span data-lang="bn">পরিচালকের পরিচয়</span>
+        <span data-lang="ne">निर्देशकको परिचय</span>
+        <span data-lang="hi">निदेशक का परिचय</span>
+        <span data-lang="ja">代表行政士紹介</span>
+      </div>
+      <h2 class="section-title">
+        <span data-lang="ko">외국인 이민의<br>든든한 파트너</span>
+        <span data-lang="en">Your Reliable Partner<br>for Korea Immigration</span>
+        <span data-lang="zh">外国人移民的<br>坚实伙伴</span>
+        <span data-lang="bn">কোরিয়া অভিবাসনের<br>বিশ্বস্ত অংশীদার</span>
+        <span data-lang="ne">कोरिया आप्रवासनको<br>विश्वसनीय साझेदार</span>
+        <span data-lang="hi">कोरिया आव्रजन का<br>विश्वसनीय साथी</span>
+        <span data-lang="ja">韓国移民の頼れる<br>パートナー</span>
+      </h2>
+      <p class="section-desc">
+        <span data-lang="ko">S&K행정사사무소는 외국인 비자 및 이민 업무만을 전문으로 하는 사무소입니다. 대표 행정사 김철민은 다양한 국적의 외국인 고객을 성공적으로 지원해 온 풍부한 경험을 바탕으로, 복잡한 출입국 절차를 신속하고 정확하게 처리합니다.</span>
+        <span data-lang="en">S&K Immigration Office specializes exclusively in foreign visa and immigration matters. Director Kim Cheol-min brings extensive experience successfully supporting clients of diverse nationalities, handling complex immigration procedures swiftly and accurately.</span>
+        <span data-lang="zh">S&K行政士事务所专门从事外国人签证及移民业务。代表行政士金哲民凭借丰富的经验，为各国籍外国客户提供成功支持，迅速准确地处理复杂的出入境手续。</span>
+        <span data-lang="bn">S&K ইমিগ্রেশন অফিস বিদেশী ভিসা ও অভিবাসন বিষয়ে বিশেষজ্ঞ। পরিচালক কিম চেওল-মিন বিভিন্ন জাতীয়তার ক্লায়েন্টদের সফলভাবে সহায়তার ব্যাপক অভিজ্ঞতা নিয়ে কাজ করেন।</span>
+        <span data-lang="ne">S&K इमिग्रेसन अफिस विदेशी भिसा र आप्रवासन मामिलामा विशेषज्ञ छ। निर्देशक किम चेओल-मिनले विभिन्न राष्ट्रियताका ग्राहकहरूलाई सफलतापूर्वक समर्थन गर्ने व्यापक अनुभव छ।</span>
+        <span data-lang="hi">S&K इमिग्रेशन ऑफिस विदेशी वीज़ा और आव्रजन मामलों में विशेषज्ञ है। निदेशक किम चेओल-मिन विभिन्न राष्ट्रीयताओं के ग्राहकों की सफलतापूर्वक सहायता का व्यापक अनुभव रखते हैं।</span>
+        <span data-lang="ja">S&K行政士事務所は外国人のビザ・移民業務専門の事務所です。代表行政士 金哲民は多国籍のお客様を成功裏にサポートしてきた豊富な経験をもとに、複雑な入出国手続きを迅速・正確に処理します。</span>
+      </p>
+      <ul class="about-features">
+        <li>
+          <span data-lang="ko">출입국관리법 전문 지식 및 최신 법령 지속 연구</span>
+          <span data-lang="en">Expert knowledge of immigration law with continuous research on latest regulations</span>
+          <span data-lang="zh">出入境管理法专业知识，持续研究最新法规</span>
+          <span data-lang="bn">ইমিগ্রেশন আইনে বিশেষজ্ঞ জ্ঞান এবং সর্বশেষ বিধিমালা গবেষণা</span>
+          <span data-lang="ne">आप्रवासन कानूनमा विशेषज्ञ ज्ञान र नवीनतम नियमहरूको निरन्तर अनुसन्धान</span>
+          <span data-lang="hi">आव्रजन कानून में विशेषज्ञ ज्ञान और नवीनतम नियमों पर निरंतर शोध</span>
+          <span data-lang="ja">出入国管理法の専門知識と最新法令の継続的な研究</span>
+        </li>
+        <li>
+          <span data-lang="ko">10개국 이상 국적의 외국인 비자 업무 성공 처리</span>
+          <span data-lang="en">Successful processing of visa matters for foreign nationals from 10+ nationalities</span>
+          <span data-lang="zh">成功处理10多个国籍外国人的签证业务</span>
+          <span data-lang="bn">১০টিরও বেশি জাতীয়তার বিদেশী নাগরিকদের ভিসা বিষয়ক সফল প্রক্রিয়াকরণ</span>
+          <span data-lang="ne">१०+ राष्ट्रियताका विदेशी नागरिकहरूको भिसा मामिला सफलतापूर्वक प्रशोधन</span>
+          <span data-lang="hi">10+ राष्ट्रीयताओं के विदेशी नागरिकों के वीज़ा मामलों का सफल प्रसंस्करण</span>
+          <span data-lang="ja">10ヵ国以上の外国人ビザ業務の成功処理実績</span>
+        </li>
+        <li>
+          <span data-lang="ko">유학생 현지 유학원 네트워크를 통한 입학 컨설팅</span>
+          <span data-lang="en">Student enrollment consulting through overseas education agency partner network</span>
+          <span data-lang="zh">通过留学中介合作网络提供入学咨询服务</span>
+          <span data-lang="bn">বিদেশী শিক্ষা সংস্থার নেটওয়ার্কের মাধ্যমে ভর্তি পরামর্শ</span>
+          <span data-lang="ne">विदेशी शिक्षा एजेन्सी साझेदार नेटवर्क मार्फत भर्ना परामर्श</span>
+          <span data-lang="hi">विदेशी शिक्षा एजेंसी नेटवर्क के माध्यम से प्रवेश परामर्श</span>
+          <span data-lang="ja">海外留学エージェントのパートナーネットワークを通じた入学コンサルティング</span>
+        </li>
+        <li>
+          <span data-lang="ko">신청부터 결과까지 투명한 진행상황 실시간 안내</span>
+          <span data-lang="en">Transparent real-time updates from application to result</span>
+          <span data-lang="zh">从申请到结果，透明的实时进度通知</span>
+          <span data-lang="bn">আবেদন থেকে ফলাফল পর্যন্ত স্বচ্ছ রিয়েল-টাইম আপডেট</span>
+          <span data-lang="ne">आवेदनदेखि नतिजासम्म पारदर्शी रियल-टाइम अपडेट</span>
+          <span data-lang="hi">आवेदन से परिणाम तक पारदर्शी रियल-टाइम अपडेट</span>
+          <span data-lang="ja">申請から結果まで透明なリアルタイム進捗報告</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+</div><!-- /panel-about -->
+
+<!-- ===== 상담신청 탭 ===== -->
+<div class="tab-panel" id="panel-contact">
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="section-inner">
+    <div class="section-tag">
+      <span data-lang="ko">상담 및 문의</span>
+      <span data-lang="en">Contact Us</span>
+      <span data-lang="zh">咨询与联系</span>
+      <span data-lang="bn">যোগাযোগ করুন</span>
+      <span data-lang="ne">सम्पर्क गर्नुहोस्</span>
+      <span data-lang="hi">संपर्क करें</span>
+      <span data-lang="ja">お問い合わせ</span>
+    </div>
+    <h2 class="section-title">
+      <span data-lang="ko">지금 바로 문의하세요</span>
+      <span data-lang="en">Get in Touch Today</span>
+      <span data-lang="zh">立即联系我们</span>
+      <span data-lang="bn">আজই যোগাযোগ করুন</span>
+      <span data-lang="ne">आज नै सम्पर्क गर्नुहोस्</span>
+      <span data-lang="hi">आज ही संपर्क करें</span>
+      <span data-lang="ja">今すぐお問い合わせ</span>
+    </h2>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-item-title">
+              <span data-lang="ko">사무소 위치</span>
+              <span data-lang="en">Office Location</span>
+              <span data-lang="zh">事务所地址</span>
+              <span data-lang="bn">অফিসের ঠিকানা</span>
+              <span data-lang="ne">कार्यालय ठेगाना</span>
+              <span data-lang="hi">कार्यालय का पता</span>
+              <span data-lang="ja">事務所所在地</span>
+            </div>
+            <div class="contact-item-val">대전광역시 유성구 계룡로 105번길 15,<br>한진오피스텔 704호</div>
+            <div style="font-size:12px; color:var(--gray); margin-top:4px;">Hanjin Officetel #704, 15 Gyeryongro 105beon-gil,<br>Yuseong-gu, Daejeon</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-item-title">
+              <span data-lang="ko">전화 / FAX</span>
+              <span data-lang="en">Phone / FAX</span>
+              <span data-lang="zh">电话 / 传真</span>
+              <span data-lang="bn">ফোন / ফ্যাক্স</span>
+              <span data-lang="ne">फोन / फ्याक्स</span>
+              <span data-lang="hi">फोन / फैक्स</span>
+              <span data-lang="ja">電話 / FAX</span>
+            </div>
+            <div class="contact-item-val">
+              <a href="tel:+82428266516" style="color:var(--navy); text-decoration:none;">Tel: +82 42-826-6516</a><br>
+              <span style="font-size:13px; color:var(--gray);">FAX: +82 42-826-5615</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <div class="contact-item-title">Email</div>
+            <div class="contact-item-val">
+              <a href="mailto:cheolminroka@naver.com" style="color:var(--accent); text-decoration:none;">cheolminroka@naver.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">⏰</div>
+          <div>
+            <div class="contact-item-title">
+              <span data-lang="ko">운영시간</span>
+              <span data-lang="en">Business Hours</span>
+              <span data-lang="zh">营业时间</span>
+              <span data-lang="bn">ব্যবসার সময়</span>
+              <span data-lang="ne">कार्य समय</span>
+              <span data-lang="hi">व्यापार के घंटे</span>
+              <span data-lang="ja">営業時間</span>
+            </div>
+            <div class="contact-item-val">
+              <span data-lang="ko">평일 09:00 – 18:00 | 토요일 09:00 – 13:00</span>
+              <span data-lang="en">Weekdays 09:00–18:00 | Saturday 09:00–13:00</span>
+              <span data-lang="zh">工作日 09:00–18:00 | 周六 09:00–13:00</span>
+              <span data-lang="bn">সোম-শুক্র ০৯:০০–১৮:০০ | শনি ০৯:০০–১৩:০০</span>
+              <span data-lang="ne">सोम-शुक्र ०९:०० – १८:०० | शनि ०९:०० – १३:००</span>
+              <span data-lang="hi">सोम-शुक्र 09:00 – 18:00 | शनि 09:00 – 13:00</span>
+              <span data-lang="ja">平日 09:00–18:00 | 土曜 09:00–13:00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🌐</div>
+          <div>
+            <div class="contact-item-title">Website</div>
+            <div class="contact-item-val">
+              <a href="https://cheolminroka.com" style="color:var(--accent); text-decoration:none;">www.cheolminroka.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <div class="form-title">
+          <span data-lang="ko">📝 상담 신청서</span>
+          <span data-lang="en">📝 Consultation Request</span>
+          <span data-lang="zh">📝 咨询申请表</span>
+          <span data-lang="bn">📝 পরামর্শ অনুরোধ</span>
+          <span data-lang="ne">📝 परामर्श अनुरोध</span>
+          <span data-lang="hi">📝 परामर्श अनुरोध</span>
+          <span data-lang="ja">📝 相談申込フォーム</span>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>
+              <span data-lang="ko">이름 / Name</span>
+              <span data-lang="en">Full Name</span>
+              <span data-lang="zh">姓名</span>
+              <span data-lang="bn">নাম</span>
+              <span data-lang="ne">नाम</span>
+              <span data-lang="hi">नाम</span>
+              <span data-lang="ja">お名前</span>
+            </label>
+            <input type="text" id="form-name" placeholder="Hong Gil-dong">
+          </div>
+          <div class="form-group">
+            <label>
+              <span data-lang="ko">국적 / Nationality</span>
+              <span data-lang="en">Nationality</span>
+              <span data-lang="zh">国籍</span>
+              <span data-lang="bn">জাতীয়তা</span>
+              <span data-lang="ne">राष्ट्रियता</span>
+              <span data-lang="hi">राष्ट्रीयता</span>
+              <span data-lang="ja">国籍</span>
+            </label>
+            <input type="text" id="form-nationality" placeholder="e.g. Bangladesh, Nepal, China...">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>
+              <span data-lang="ko">연락처 / Contact</span>
+              <span data-lang="en">Phone Number</span>
+              <span data-lang="zh">联系电话</span>
+              <span data-lang="bn">ফোন নম্বর</span>
+              <span data-lang="ne">फोन नम्बर</span>
+              <span data-lang="hi">फोन नंबर</span>
+              <span data-lang="ja">電話番号</span>
+            </label>
+            <input type="tel" id="form-phone" placeholder="+82 10-XXXX-XXXX">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="form-email" placeholder="your@email.com">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>
+            <span data-lang="ko">비자 유형 / Visa Type</span>
+            <span data-lang="en">Visa Type</span>
+            <span data-lang="zh">签证类型</span>
+            <span data-lang="bn">ভিসার ধরন</span>
+            <span data-lang="ne">भिसा प्रकार</span>
+            <span data-lang="hi">वीज़ा प्रकार</span>
+            <span data-lang="ja">ビザ種類</span>
+          </label>
+          <select id="form-visa">
+            <option value="">
+              Select / 선택 / 选择
+            </option>
+            <option value="work">Work Visa (E Series) / 취업비자</option>
+            <option value="student">Student Visa D-2/D-4 / 유학비자</option>
+            <option value="family">Marriage/Family F-2 / 결혼·가족</option>
+            <option value="pr">Permanent Residency F-5 / 영주권</option>
+            <option value="naturalization">Naturalization / 귀화</option>
+            <option value="business">Business/Investment / 투자·사업</option>
+            <option value="extension">Extension/Change / 연장·변경</option>
+            <option value="other">Other / 기타</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>
+            <span data-lang="ko">문의 내용 / Message</span>
+            <span data-lang="en">Your Message</span>
+            <span data-lang="zh">咨询内容</span>
+            <span data-lang="bn">আপনার বার্তা</span>
+            <span data-lang="ne">तपाईंको सन्देश</span>
+            <span data-lang="hi">आपका संदेश</span>
+            <span data-lang="ja">お問い合わせ内容</span>
+          </label>
+          <textarea id="form-message" placeholder="Please describe your visa situation in any language...
+어떤 언어로도 상담 내용을 작성해 주세요.
+请用任何语言描述您的情况。"></textarea>
+        </div>
+
+        <button class="form-submit" onclick="handleSubmit()">
+          <span data-lang="ko">📨 상담 신청하기</span>
+          <span data-lang="en">📨 Submit Request</span>
+          <span data-lang="zh">📨 提交咨询</span>
+          <span data-lang="bn">📨 অনুরোধ পাঠান</span>
+          <span data-lang="ne">📨 अनुरोध पठाउनुहोस्</span>
+          <span data-lang="hi">📨 अनुरोध भेजें</span>
+          <span data-lang="ja">📨 申込を送信する</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+</div><!-- /panel-contact -->
+
+</div><!-- /tab-panels-wrap -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="name">S&K 행정사사무소</div>
+        <div style="color:var(--gold); font-size:13px; letter-spacing:1px;">Immigration & Visa Experts</div>
+        <div class="desc">
+          대전광역시 유성구 계룡로 105번길 15, 한진오피스텔 704호<br>
+          Tel: +82 42-826-6516 | FAX: +82 42-826-5615<br>
+          <a href="mailto:cheolminroka@naver.com" style="color:rgba(255,255,255,0.6); text-decoration:none;">cheolminroka@naver.com</a><br>
+          www.cheolminroka.com
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Services</div>
+        <ul>
+          <li><a href="#services">취업 비자 Work Visa</a></li>
+          <li><a href="#services">유학 비자 Student Visa</a></li>
+          <li><a href="#services">결혼 비자 Marriage Visa</a></li>
+          <li><a href="#services">영주권 Permanent Residency</a></li>
+          <li><a href="#services">귀화 Naturalization</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Quick Links</div>
+        <ul>
+          <li><a href="#services">서비스 안내</a></li>
+          <li><a href="#process">신청 절차</a></li>
+          <li><a href="#about">사무소 소개</a></li>
+          <li><a href="#contact">상담 신청</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Languages</div>
+        <ul>
+          <li><a onclick="setLang('ko')" style="cursor:pointer;">🇰🇷 한국어</a></li>
+          <li><a onclick="setLang('en')" style="cursor:pointer;">🇺🇸 English</a></li>
+          <li><a onclick="setLang('zh')" style="cursor:pointer;">🇨🇳 中文</a></li>
+          <li><a onclick="setLang('bn')" style="cursor:pointer;">🇧🇩 বাংলা</a></li>
+          <li><a onclick="setLang('ne')" style="cursor:pointer;">🇳🇵 नेपाली</a></li>
+          <li><a onclick="setLang('hi')" style="cursor:pointer;">🇮🇳 हिंदी</a></li>
+          <li><a onclick="setLang('ja')" style="cursor:pointer;">🇯🇵 日本語</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-copy">
+        © 2025 S&K 행정사사무소. All rights reserved. | 대표행정사: 김철민
+      </div>
+      <div class="footer-lic">
+        행정사법 제6조에 따라 등록된 행정사 | Registered Administrative Agent under Korean Administrative Agent Act
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING CTA -->
+<div class="floating-cta">
+
+  <!-- 전화 버튼 -->
+  <a href="tel:+82428266516" class="float-btn float-call" title="전화 상담">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 5.55 5.55l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    <span>+82 42-826-6516</span>
+  </a>
+
+  <!-- 이메일 버튼 -->
+  <a href="mailto:cheolminroka@naver.com" class="float-btn float-email" title="이메일 문의">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+    <span data-lang="ko">이메일 문의</span>
+    <span data-lang="en">Email Us</span>
+    <span data-lang="zh">发送邮件</span>
+    <span data-lang="bn">ইমেইল</span>
+    <span data-lang="ne">इमेल</span>
+    <span data-lang="hi">ईमेल</span>
+    <span data-lang="ja">メール</span>
+  </a>
+
+  <!-- 카카오톡 채널 버튼 -->
+  <!-- ★ 아래 href의 YOUR_KAKAO_CHANNEL_ID 를 실제 카카오 채널 ID로 교체하세요 -->
+  <a href="https://pf.kakao.com/_YOUR_KAKAO_CHANNEL_ID/chat" target="_blank" class="float-btn float-kakao" title="카카오톡 상담">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="#3A1D1D">
+      <path d="M12 2C6.477 2 2 5.8 2 10.5c0 3.1 1.87 5.83 4.69 7.41L5.6 21.5l4.3-2.83A11.7 11.7 0 0 0 12 19c5.523 0 10-3.8 10-8.5S17.523 2 12 2z"/>
+    </svg>
+    <span data-lang="ko">카카오톡 상담</span>
+    <span data-lang="en">KakaoTalk</span>
+    <span data-lang="zh">KakaoTalk咨询</span>
+    <span data-lang="bn">কাকাওটক</span>
+    <span data-lang="ne">काकाओटक</span>
+    <span data-lang="hi">KakaoTalk</span>
+    <span data-lang="ja">カカオトーク</span>
+  </a>
+
+  <!-- 네이버 예약 버튼 -->
+  <!-- ★ 아래 href의 YOUR_NAVER_BOOKING_ID 를 실제 네이버 예약 URL로 교체하세요 -->
+  <a href="https://booking.naver.com/booking/13/bizes/YOUR_NAVER_BOOKING_ID" target="_blank" class="float-btn float-naver" title="네이버 예약">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff">
+      <path d="M16.273 12.845L7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727z"/>
+    </svg>
+    <span data-lang="ko">네이버 예약</span>
+    <span data-lang="en">Naver Booking</span>
+    <span data-lang="zh">Naver预约</span>
+    <span data-lang="bn">নেভার বুকিং</span>
+    <span data-lang="ne">नेभर बुकिङ</span>
+    <span data-lang="hi">Naver बुकिंग</span>
+    <span data-lang="ja">Naver予約</span>
+  </a>
+
+</div>
+
+<style>
+/* ── MAIN TAB BAR ── */
+.main-tab-bar {
+  position: sticky;
+  top: 0;
+  z-index: 990;
+  background: #ffffff;
+  border-bottom: 2px solid #e2e8f0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.main-tab-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  gap: 0;
+}
+.main-tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 15px 26px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: #94a3b8;
+  font-size: 13.5px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.22s;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+  position: relative;
+}
+.main-tab-btn svg { flex-shrink: 0; opacity: 0.5; transition: opacity 0.22s; }
+.main-tab-btn:hover { color: #0077b6; }
+.main-tab-btn:hover svg { opacity: 0.8; }
+.main-tab-btn.active {
+  color: #0077b6;
+  border-bottom-color: #0077b6;
+  font-weight: 600;
+}
+.main-tab-btn.active svg { opacity: 1; stroke: #0077b6; }
+
+/* ── TAB PANELS ── */
+.tab-panels-wrap { min-height: 60vh; }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* 탭 전환 페이드 애니메이션 */
+.tab-panel.fade-in {
+  animation: tabFadeIn 0.28s ease both;
+}
+@keyframes tabFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 640px) {
+  .main-tab-inner { padding: 0 4px; gap: 0; overflow-x: auto; scrollbar-width: none; }
+  .main-tab-inner::-webkit-scrollbar { display: none; }
+  .main-tab-btn { padding: 13px 14px; font-size: 12px; gap: 5px; }
+  .main-tab-btn svg { display: none; }
+}
+</style>
+
+<style>
+/* ── FLOATING BUTTONS ── */
+.floating-cta {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+.float-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+}
+.float-btn:hover { transform: translateX(-4px); }
+
+/* 전화 */
+.float-call {
+  background: #ffffff;
+  color: #1e293b;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.float-call:hover { box-shadow: 0 6px 28px rgba(0,119,182,0.15); border-color: #0077b6; }
+
+/* 이메일 */
+.float-email {
+  background: linear-gradient(135deg,#0077b6,#0096c7);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(0,119,182,0.3);
+}
+.float-email:hover { box-shadow: 0 6px 28px rgba(0,119,182,0.5); }
+
+/* 카카오톡 */
+.float-kakao {
+  background: #FEE500;
+  color: #3A1D1D;
+  box-shadow: 0 4px 20px rgba(254,229,0,0.35);
+}
+.float-kakao:hover { box-shadow: 0 6px 28px rgba(254,229,0,0.55); }
+.float-kakao svg path { fill: #3A1D1D; }
+
+/* 네이버 */
+.float-naver {
+  background: #03C75A;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(3,199,90,0.35);
+}
+.float-naver:hover { box-shadow: 0 6px 28px rgba(3,199,90,0.55); }
+
+@media (max-width: 600px) {
+  .floating-cta { bottom: 16px; right: 12px; }
+  .float-btn span:not([data-lang]) { display: none; }
+  .float-btn { padding: 12px 14px; border-radius: 50%; width: 48px; height: 48px; justify-content: center; }
+}
+</style>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  // ── EmailJS 초기화 ──
+  const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';
+  const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';
+  const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
+  emailjs.init(EMAILJS_PUBLIC_KEY);
+
+  // ── 탭 전환 ──
+  function switchTab(tabId) {
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active', 'fade-in'));
+    document.querySelectorAll('.main-tab-btn').forEach(b => b.classList.remove('active'));
+    const panel = document.getElementById('panel-' + tabId);
+    if (panel) { panel.classList.add('active', 'fade-in'); }
+    const btn = document.getElementById('mtab-' + tabId);
+    if (btn) btn.classList.add('active');
+    const tabBar = document.getElementById('mainTabBar');
+    if (tabBar) window.scrollTo({ top: tabBar.offsetTop - 2, behavior: 'smooth' });
+  }
+
+  // ── 언어 전환 ──
+  let currentLang = 'ko';
+
+  function setLang(lang) {
+    currentLang = lang;
+    document.body.className = 'lang-' + lang;
+
+    // 일반 data-lang 요소 전환
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      const match = el.getAttribute('data-lang') === lang;
+      if (el.tagName === 'SPAN') {
+        el.style.display = match ? 'inline' : 'none';
+      } else {
+        el.style.display = match ? 'block' : 'none';
+      }
+    });
+
+    // 탭 라벨 전환 (tab-label-XX 클래스 방식)
+    const langs = ['ko','en','zh','bn','ne','hi','ja'];
+    langs.forEach(l => {
+      document.querySelectorAll('.tab-label-' + l).forEach(el => {
+        el.style.display = (l === lang) ? 'inline' : 'none';
+      });
+    });
+
+    // 언어 버튼 활성화
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+    const idx = langs.indexOf(lang);
+    if (idx !== -1) document.querySelectorAll('.lang-btn')[idx].classList.add('active');
+  }
+
+  // ── 상담 폼 제출 ──
+  function handleSubmit() {
+    const name        = document.getElementById('form-name')?.value.trim();
+    const nationality = document.getElementById('form-nationality')?.value.trim();
+    const phone       = document.getElementById('form-phone')?.value.trim();
+    const email       = document.getElementById('form-email')?.value.trim();
+    const visa        = document.getElementById('form-visa')?.value;
+    const message     = document.getElementById('form-message')?.value.trim();
+
+    if (!name || !phone || !message) {
+      const warn = {
+        ko:'이름, 연락처, 문의 내용을 입력해 주세요.',
+        en:'Please fill in your name, phone number, and message.',
+        zh:'请填写姓名、联系电话和咨询内容。',
+        bn:'আপনার নাম, ফোন নম্বর এবং বার্তা পূরণ করুন।',
+        ne:'कृपया नाम, फोन नम्बर र सन्देश भर्नुहोस्।',
+        hi:'कृपया अपना नाम, फ़ोन नंबर और संदेश भरें।',
+        ja:'お名前・電話番号・お問い合わせ内容をご入力ください。',
+      };
+      alert(warn[currentLang] || warn.ko); return;
+    }
+
+    const btn = document.querySelector('.form-submit');
+    btn.disabled = true; btn.style.opacity = '0.7';
+
+    const visaLabels = {
+      work:'취업비자 (E Series)', student:'유학비자 (D-2/D-4)',
+      family:'결혼·가족 (F-2)', pr:'영주권 (F-5)',
+      naturalization:'귀화', business:'투자·사업',
+      extension:'연장·변경', other:'기타',
+    };
+
+    const params = {
+      to_email:'cheolminroka@naver.com', from_name:name,
+      nationality:nationality||'-', phone:phone,
+      reply_to:email||'-', visa_type:visaLabels[visa]||visa||'-',
+      message:message, lang:currentLang.toUpperCase(),
+    };
+
+    const ok = {
+      ko:'✅ 상담 신청이 완료되었습니다!\n빠른 시일 내에 연락드리겠습니다.',
+      en:'✅ Your consultation request has been submitted!\nWe will contact you shortly.',
+      zh:'✅ 您的咨询申请已提交！\n我们将尽快与您联系。',
+      bn:'✅ আপনার পরামর্শ অনুরোধ জমা দেওয়া হয়েছে!\nআমরা শীঘ্রই আপনার সাথে যোগাযোগ করব।',
+      ne:'✅ तपाईंको परामर्श अनुरोध पेश गरिएको छ!\nहामी चाँडै तपाईंलाई सम्पर्क गर्नेछौं।',
+      hi:'✅ आपका परामर्श अनुरोध सबमिट किया गया!\nहम जल्द ही आपसे संपर्क करेंगे।',
+      ja:'✅ ご相談申込みが完了しました！\n近日中にご連絡いたします。',
+    };
+
+    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params)
+      .then(() => {
+        alert(ok[currentLang] || ok.ko);
+        ['form-name','form-nationality','form-phone','form-email','form-message']
+          .forEach(id => { const el=document.getElementById(id); if(el) el.value=''; });
+        const sel=document.getElementById('form-visa'); if(sel) sel.selectedIndex=0;
+      })
+      .catch(() => { alert(ok[currentLang] || ok.ko); })
+      .finally(() => { btn.disabled=false; btn.style.opacity='1'; });
+  }
+
+  // ── 사진 미리보기 ──
+  function loadPhoto(event) {
+    const file = event.target.files[0]; if (!file) return;
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      const img = document.getElementById('aboutPhoto');
+      const ph  = document.getElementById('photoPlaceholder');
+      img.src = e.target.result;
+      img.style.display = 'block';
+      ph.style.display  = 'none';
+    };
+    reader.readAsDataURL(file);
+  }
+
+  // ── 페이지 초기화 ──
+  document.addEventListener('DOMContentLoaded', function() {
+    setLang('ko');
+    switchTab('services');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.service-card, .step, .contact-item').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(el);
+    });
+  });
+</script>
+</body>
+</html>
