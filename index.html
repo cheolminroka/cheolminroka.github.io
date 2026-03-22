@@ -190,7 +190,7 @@
 
   /* ── HEADER / NAV ── */
   .header {
-    height: 80px;
+    min-height: 80px;
     position: sticky;
     top: 45px;
     z-index: 995;
@@ -208,6 +208,7 @@
     justify-content: space-between;
     width: 100%;
     gap: 0;
+    flex-wrap: wrap;
   }
   /* 로고 */
   .logo-wrap {
@@ -2218,6 +2219,14 @@
   
   // ── 페이지 초기화 ──
   document.addEventListener('DOMContentLoaded', function() {
+    function setHeaderTop() {
+      const langBar = document.querySelector('.lang-bar');
+      const h = langBar?.offsetHeight || 0;
+      document.documentElement.style.setProperty('--lang-bar-h', h + 'px');
+    }
+
+    setHeaderTop();
+    window.addEventListener('resize', setHeaderTop);
     function setHeroHeight() {
       const langBar = document.querySelector('.lang-bar');
       const header  = document.querySelector('.header');
