@@ -986,6 +986,15 @@
     .hero-stats { grid-template-columns: 1fr 1fr; }
     .hero-stats .stat-card:nth-child(1) { grid-column: span 2; }
   }
+  @media (max-width: 640px) {
+    .lang-bar-inner {
+      padding: 0 12px;
+      flex-wrap: wrap;
+    }
+    .lang-label { display: none; }
+    
+    .header { top: 37px; }
+  }
 </style>
 </head>
 <body class="lang-ko">
